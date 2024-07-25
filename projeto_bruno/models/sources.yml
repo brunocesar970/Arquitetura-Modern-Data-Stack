@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: snowflake
+    database: lake  
+    schema: lake_dev  
+    tables:
+      - name: cleansed_payments
+      - name: cleansed_subscription
+      - name: cleansed_user
+      - name: credit_card_usage_per_country
+      - name: payments_per_plan_credit_card_type

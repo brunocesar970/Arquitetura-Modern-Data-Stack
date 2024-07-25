@@ -1,0 +1,22 @@
+version: 2
+
+exposures:
+
+  - name: painel_do_cliente
+    label: Painel do Cliente
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+      "Analise de pagamentos por plano e cartao"
+
+    depends_on:
+      - ref('average_ticket_by_age')
+      - ref('credit_card_usage_per_country')
+      - ref('payments_per_plan_credit_card_type')
+      - source('snowflake','cleansed_subscription')
+      - source('snowflake','cleansed_payments')
+
+    owner:
+      name: Bruno
+      email: brunocesar@gmail.com
