@@ -46,10 +46,6 @@ DAGs configuradas para orquestrar as tarefas de ingestão e transformação dos 
 ### 4. Metabase
 Dashboard e relatórios configurados para visualizar os dados da camada Gold no Snowflake.
 
-- Resultado da arquitetura com os dados da gold sendo consumidos pelo metabase
-
-![Dados Consumidos pelo Snowflake](<metabase.png>)
-
 
 ## Como Executar o Projeto
 
@@ -91,6 +87,10 @@ Dashboard e relatórios configurados para visualizar os dados da camada Gold no 
      docker run -d -p 3000:3000 --name metabase metabase/metabase
 
    - Configure o Metabase para conectar ao Snowflake e crie os dashboards necessários.
+
+## Resultado da arquitetura com os dados da gold sendo consumidos pelo metabase
+
+![Dados Consumidos pelo Snowflake](<metabase.png>)
 
 
 
