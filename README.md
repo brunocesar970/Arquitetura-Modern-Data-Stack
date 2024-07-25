@@ -90,7 +90,7 @@ Dashboard e relatórios configurados para visualizar os dados da camada Gold no 
 
 ## Resultado da arquitetura com os dados da gold sendo consumidos pelo metabase
 
-![Dados Consumidos pelo Snowflake](<metabase.png>)
+![Dados Consumidos pelo Metabase](<metabase.png>)
 
 
 
