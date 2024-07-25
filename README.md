@@ -21,6 +21,8 @@ Este projeto implementa uma arquitetura de Modern Data Stack para ingestão, pro
 - **Silver Layer (Schema: lake_dev_silver)**: Dados limpos, onde realizamos a limpeza de campos e transformações como a criação de colunas a partir de colunas JSON.
 - **Gold Layer (Schema: lake_dev_gold)**: Dados finais prontos para consumo, com junções e agregações realizadas para análises de negócios.
 
+![Schemas no Snowflake](schemas_snowflake.png)
+
 ### 3. Data Warehouse
 **Snowflake**: Utilizado como nosso Data Warehouse, onde armazenamos os dados processados nas diferentes camadas (Raw, Bronze, Silver, Gold). O Snowflake fornece uma plataforma escalável e de alto desempenho para armazenamento e consulta de dados.
 
@@ -43,6 +45,11 @@ DAGs configuradas para orquestrar as tarefas de ingestão e transformação dos 
 
 ### 4. Metabase
 Dashboard e relatórios configurados para visualizar os dados da camada Gold no Snowflake.
+
+- Resultado da arquitetura com os dados da gold sendo consumidos pelo metabase
+
+![Dados Consumidos pelo Snowflake](<metabase.png>)
+
 
 ## Como Executar o Projeto
 
